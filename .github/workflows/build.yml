@@ -25,7 +25,7 @@ jobs:
           pyinstaller --onedir --windowed --name "FolderMate" --hidden-import customtkinter main.py
       
       - name: Upload exe
-        uses: uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: FolderMate-Windows
           path: dist/FolderMate/
