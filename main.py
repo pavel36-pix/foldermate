@@ -4,6 +4,7 @@ import os
 import shutil
 import time
 import threading
+from PIL import Image
 
 # Theme settings
 ctk.set_appearance_mode("dark")
@@ -25,6 +26,9 @@ move_history = []
 # Main window
 app = ctk.CTk()
 app.title("FolderMate - File Organizer")
+from PIL import ImageTk
+icon = ImageTk.PhotoImage(Image.open("icon.png"))
+app.iconphoto(True, icon)
 app.geometry("600x580")
 
 # Title
