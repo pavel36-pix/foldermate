@@ -26,9 +26,8 @@ move_history = []
 # Main window
 app = ctk.CTk()
 app.title("FolderMate - File Organizer")
-from PIL import ImageTk
-icon = ImageTk.PhotoImage(Image.open("icon.png"))
-app.iconphoto(True, icon)
+#from PIL import ImageTk
+
 app.geometry("600x580")
 
 # Title
