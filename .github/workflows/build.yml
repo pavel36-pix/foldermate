@@ -18,6 +18,7 @@ jobs:
       - name: Instalare dependinte
         run: |
           pip install customtkinter
+          pip install pillow
           pip install pyinstaller
       
       - name: Compilare exe
